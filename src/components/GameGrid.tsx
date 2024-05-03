@@ -11,15 +11,18 @@ interface FetchGameResponse{
   count:number;
   result:Game[];
 }
+
 const GameGrid = () => {
   const [games,setGames]= useState<Game[]>([]);
   const [error,setError]= useState();
 
-  useEffect (()=>{
-    apiClient.get<FetchGameResponse>('/games')
-      .then(res=>setGames(res.data.result))
-      .catch(err=>setError(err.message));
-  })
+  const proxyUrl = "http://127.0.0.1:8080/";
+
+  useEffect(() => {
+    apiClient.get<FetchGameResponse>(`${proxyUrl}/games`)
+      .then(res => setGames(res.data.result))
+      .catch(err => setError(err.message));
+  }, []); // Add an empty dependency array to ensure the effect runs only once
 
   return (
     <ul>
