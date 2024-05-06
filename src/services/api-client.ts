@@ -12,9 +12,9 @@ export default axios.create({
     page: '1',
     sort_by: 'popularity.desc'
   },
+
   headers: {
     accept: 'application/json',
-
-    Authorization: 'Bearer 0a332ac23ff992b8cb8703b17c7727c1'
+    Authorization: 'Bearer '
   }
 })

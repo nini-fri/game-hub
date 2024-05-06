@@ -1,6 +1,7 @@
-import { Text } from "@chakra-ui/react"
+import { SimpleGrid, Text } from "@chakra-ui/react"
 import React,{useEffect, useState} from "react";
 import axios from "axios";
+import MovieCard from "./MovieCard";
 
 interface Movies{
   id:number;
@@ -9,15 +10,8 @@ interface Movies{
   release_date:string;
 }
 
-interface FetchMovieResponse{
-  count:number;
-  result:Movies[];
-}
-
 
 const GameGrid = () => {
-
-
   const [movies,setMovies]= useState<Movies[]>([]);
   const [error,setError]= useState('');
 
@@ -33,14 +27,16 @@ const GameGrid = () => {
     })
   }
 
-
   return (
-    <ul>
-        {movies.map(item => (
-          <li key={item.id}>{item.title}</li>
-        ))}
-    </ul>
-  )
 
+      <SimpleGrid columns={3} spacing={10}>
+        {movies.map(item => (
+
+          <li key={item.id}>{item.title}</li>
+
+        ))}
+      </SimpleGrid>
+
+  )
 }
 export default GameGrid
