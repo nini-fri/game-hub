@@ -1,20 +1,8 @@
 import axios from "axios";
 
-
 export default axios.create({
-
-  method: 'GET',
-  url: 'https://api.themoviedb.org/3/discover/movie',
+  baseURL: "https://api.rawg.io/api",
   params: {
-    include_adult: 'false',
-    include_video: 'false',
-    language: 'en-US',
-    page: '1',
-    sort_by: 'popularity.desc'
+    key: "a799fb712f474c999bdeedafceb21556",
   },
-
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer '
-  }
-})
+});
