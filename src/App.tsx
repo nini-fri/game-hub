@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, GridItem, HStack, Show } from "@chakra-ui/react";
 import { useState } from "react";
-import NavBar from "./components/Nav"
+import NavBar from "./components/NavBar"
 import GameHeading from "./components/GameHeading";
 import { Genre } from "./hooks/useGenres";
 import GameGrid from "./components/GameGrid"
