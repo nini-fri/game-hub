@@ -1,12 +1,10 @@
-import useGames, { Platform } from "../hooks/useGames";
+
 import { GameQuery } from "../App";
 import GameCard from "./GameCard";
 import { SimpleGrid, Text } from "@chakra-ui/react";
-import { Genre } from "../hooks/useGenres";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-
-
+import useGames from "../hooks/useGames";
 interface Props {
   gameQuery: GameQuery;
 }
