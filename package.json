@@ -20,6 +20,7 @@
     "cors-anywhere": "^0.4.4",
     "express": "^4.19.2",
     "framer-motion": "^11.1.7",
+    "ms": "^2.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -27,6 +28,7 @@
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
+    "@types/ms": "^0.7.34",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
