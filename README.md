@@ -1,9 +1,9 @@
 
-Welcome to GameHub!
+# Welcome to GameHub!
 
 GameHub is the React course project designed to showcase the integration of modern web technologies and APIs to create a dynamic and engaging web application. This project was developed following two parts of the comprehensive React course by Code with Mosh. 
 
-About the Project
+## About the Project
 
 GameHub is a web application that allows users to browse and discover video games across multiple platforms. The project leverages the RAWG Video Games Database API to fetch game data, ensuring users have access to vast and up-to-date information. 
 
