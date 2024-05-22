@@ -15,7 +15,7 @@ To get a local version of GameHub up and running, follow these steps:
 Begin by cloning this repository to your local machine. This will give you a copy of the codebase.
 `git clone [repository-url]`
 
-2.	Install Dependencies:
+        2.	 Install Dependencies:
 Navigate into the project directory and run the following command to install the necessary dependencies:
 `npm install`
 
